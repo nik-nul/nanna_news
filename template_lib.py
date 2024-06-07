@@ -5,7 +5,7 @@ headp = """% HEAD BEGIN
 \\usepackage@@@@multicol^^^^
 \\usepackage@@@@anysize^^^^
 \\usepackage@@@@fontspec^^^^
-\\usepackage@@@@ctex^^^^
+\\usepackage[fontset=none]@@@@ctex^^^^
 \\usepackage@@@@tabularx^^^^
 \\usepackage[breaklinks=true, colorlinks=true]@@@@hyperref^^^^
 \\setlength\\columnsep@@@@30pt^^^^
