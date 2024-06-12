@@ -19,6 +19,8 @@ jobs:
           ctex
           tabularx
           chinese-jfm
+          tex-gyre-bonum
+          noto
     - name: Set up Python 3.10
       uses: actions/setup-python@v3
       with:
