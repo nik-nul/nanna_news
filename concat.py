@@ -43,7 +43,7 @@ if len(sys.argv) > 1:
     if sys.argv[1] != 'test':
         os.chdir(f'./{sys.argv[1]}')
 else:
-    os.chidr(f'./{date}')
+    os.chdir(f'./{date}')
 ls = os.listdir()
 if 'saying' in ls:
     with open('saying') as f:
