@@ -25,6 +25,7 @@ jobs:
     - name: Show Where am I
       run: |
         pwd
+        cd ..
         ls -l
     # - name: Concat & Compile
     #   run: |
