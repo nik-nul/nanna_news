@@ -20,8 +20,8 @@ jobs:
           tabularx
           chinese-jfm
           tex-gyre-bonum
-          noto-cjk
           fandol
+          notocjksc
     - name: Set up Python 3.10
       uses: actions/setup-python@v3
       with:
