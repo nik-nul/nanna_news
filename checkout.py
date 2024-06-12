@@ -11,6 +11,8 @@ os.system('mkdir output')
 
 if len(sys.argv) > 1:
     if sys.argv[1] != 'test':
-        os.system(f'mv ./{sys.argv[1]}/* ./output/')
+        os.system(f'mv ./{sys.argv[1]}/*{date}.pdf ./output/')
+        os.system(f'mv ./{sys.argv[1]}/*{date}.tex ./output/')
+        os.system(f'mv ./{sys.argv[1]}/*{date}.log ./output/')
 else:
     os.system(f'mv ./{date}/* ./output/')
