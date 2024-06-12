@@ -8,6 +8,6 @@ date = f"{y}.{m}.{d}"
 
 if len(sys.argv) > 1:
     if sys.argv[1] != 'test':
-        os.system(f'mv ./{sys.argv[1]/*} ./output/')
+        os.system(f'mv ./{sys.argv[1]}/* ./output/')
 else:
     os.system(f'mv ./{date}/* ./output/')
