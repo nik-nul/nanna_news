@@ -26,4 +26,4 @@ jobs:
       uses: actions/checkout@v3
     - name: Concat & Compile
       run: |
-        python concat.py test
+        python concat.py testcase
