@@ -15,4 +15,4 @@ if len(sys.argv) > 1:
         os.system(f'mv ./{sys.argv[1]}/*{date}.tex ./output/')
         os.system(f'mv ./{sys.argv[1]}/*{date}.log ./output/')
 else:
-    os.system(f'mv ./{date}/* ./output/')
+    os.system(f'mv ./{date}/*.pdf ./output/')
