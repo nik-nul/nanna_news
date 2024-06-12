@@ -27,3 +27,13 @@ jobs:
     - name: Concat & Compile
       run: |
         python concat.py testcase
+    - name: Upload PDF
+      uses: actions/upload-artifact@v4
+      with:
+        name: pdf
+        path: ./*/*.pdf
+    - name: Upload Outputs
+      uses: actions/upload-artifact@v4
+      with:
+        name: output
+        path: ./*/
