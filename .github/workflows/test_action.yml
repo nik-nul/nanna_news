@@ -6,28 +6,24 @@ jobs:
   test_set_comp:
     runs-on: ubuntu-latest
     steps:
-    # - name: Setup TeXLive
-    #   uses: teatimeguest/setup-texlive-action@v3
-    #   with:
-    #     packages: |
-    #       scheme-basic
-    #       graphicx
-    #       hyperref
-    #       multicol
-    #       anysize
-    #       fontspec
-    #       ctex
-    #       tabularx
+    - name: Setup TeXLive
+      uses: teatimeguest/setup-texlive-action@v3
+      with:
+        packages: |
+          scheme-basic
+          graphicx
+          hyperref
+          multicol
+          anysize
+          fontspec
+          ctex
+          tabularx
     - name: Set up Python 3.10
       uses: actions/setup-python@v3
       with:
         python-version: '3.10'
     - name: Checkout
       uses: actions/checkout@v3
-    - name: Show Where am I
+    - name: Concat & Compile
       run: |
-        pwd
-        ls -l
-    # - name: Concat & Compile
-    #   run: |
-    #     python concat.py
+        python concat.py test
