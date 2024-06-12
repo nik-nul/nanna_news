@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Setup TeXLive
-    - uses: teatimeguest/setup-texlive-action@v3
+      uses: teatimeguest/setup-texlive-action@v3
       with:
         packages: |
           scheme-basic
