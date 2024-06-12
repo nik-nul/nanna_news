@@ -1,6 +1,7 @@
 # for CI only
 import time
 import os
+import sys
 
 raw_date = time.localtime()
 y, m, d = raw_date.tm_year, raw_date.tm_mon, raw_date.tm_mday
